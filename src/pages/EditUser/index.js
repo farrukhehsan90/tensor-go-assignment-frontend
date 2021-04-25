@@ -50,7 +50,17 @@ export default function EditUser () {
             setEmail(email.currentTarget.value)
           }}
         />
-        <span style={{ fontWeight: 'bold' }}>Gender</span>
+
+        <div
+          style={{
+            display: 'flex',
+            flexDirection: 'row',
+            justifyContent: 'flex-start'
+          }}
+        >
+          <span style={{ fontWeight: 'bold' }}>Gender</span>
+        </div>
+
         <div
           style={{
             display: 'flex',
@@ -79,7 +89,16 @@ export default function EditUser () {
           <Label style={{ marginBottom: 5 }}>Female</Label>
         </div>
 
-        <span style={{ marginTop: 20, fontWeight: 'bold' }}>Status</span>
+        <div
+          style={{
+            display: 'flex',
+            flexDirection: 'row',
+            justifyContent: 'flex-start'
+          }}
+        >
+          <span style={{ marginTop: 20, fontWeight: 'bold' }}>Status</span>
+        </div>
+
         <div
           style={{
             display: 'flex',
