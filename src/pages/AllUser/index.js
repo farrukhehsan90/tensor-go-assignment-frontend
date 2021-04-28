@@ -30,6 +30,7 @@ export default function AllUser () {
   return (
     <div className='login-page'>
       <div className='form'>
+        <h1>All Users</h1>
         {users?.map((user, i) => {
           return (
             <div
@@ -37,6 +38,7 @@ export default function AllUser () {
               style={{
                 display: 'flex',
                 flexDirection: 'row',
+                alignItems: 'center',
                 justifyContent: 'space-between',
                 marginTop: 20
               }}
@@ -47,7 +49,9 @@ export default function AllUser () {
                   navigate('/users/edit', { state: { user } })
                 }}
                 style={{
-                  width: 'unset',
+                  width: 100,
+                  height: 25,
+                  borderRadius: 30,
                   padding: 'unset',
                   backgroundColor: '#007BFF'
                 }}
